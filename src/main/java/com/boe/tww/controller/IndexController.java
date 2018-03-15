@@ -11,16 +11,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @create 2018-03-13 15:08
  */
 @Controller
-@RequestMapping("/user")
 public class IndexController {
-    @GetMapping("/login_view")
+    @GetMapping("/user/login_view")
     public String login_view() {
         return "login";
     }
 
-    @GetMapping("/index")
-    public String index() {
+    @GetMapping("/user/index")
+    public String userIndex() {
         return "index";
     }
+
+    @GetMapping("/index")
+    public String index() {
+        return "get index success";
+    }
+
 }
 

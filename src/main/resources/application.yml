@@ -31,8 +31,8 @@ spring:
   jpa:
     properties:
       hibernate:
-        show_sql: true
-        format_sql: true
+#        show_sql: true
+#        format_sql: true
         hbm2ddl: auto
         id:
           new_generator_mappings: false
@@ -41,15 +41,15 @@ spring:
       prefix: /WEB-INF/
       suffix: .jsp
     static-path-pattern: /**
-  redis:
-    host: 127.0.0.1
-    port: 6379
-    database: 0 #默认是索引为的0的数据库
-    jedis:
-      pool:
-        max-active: 2
-        max-idle: 20
-        min-idle: 1
+#  redis:
+#    host: 127.0.0.1
+#    port: 6379
+#    database: 0 #默认是索引为的0的数据库
+#    jedis:
+#      pool:
+#        max-active: 2
+#        max-idle: 20
+#        min-idle: 1
 
 logging:
   level:

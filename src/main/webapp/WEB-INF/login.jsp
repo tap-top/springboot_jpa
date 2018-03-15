@@ -4,9 +4,9 @@
     <title>index</title>
 </head>
 <body>
-    <form method="get" action="/user/login">
-        用户名：<input type="text" name="name"/><br/>
-        密码：<input type="text" name="password">
+    <form method="post" action="/login">
+        用户名：<input type="text" name="username"/><br/>
+        密码：<input type="password" name="password">
         <input type="submit" value="登录">
     </form>
 </body>
